@@ -1,6 +1,6 @@
 # Layouts Básicos no Jetpack Compose (App MySoothe)
 
-Este repositório contém a implementação prática desenvolvida durante o codelab **"Basic Layouts in Compose" (Layouts Básicos no Jetpack Compose)**, disponibilizado pelo Google.
+Este repositório contém a implementação prática desenvolvida durante o codelab [**Basic Layouts in Compose (Layouts Básicos no Jetpack Compose)**](https://developer.android.com/codelabs/jetpack-compose-layouts?hl=pt-br#0), disponibilizado pelo Google.
 
 O objetivo deste projeto é explorar como estruturar layouts reais e complexos de interface do usuário para Android (aplicativo de bem-estar *MySoothe*), utilizando composables fundamentais, alinhamentos, modificadores, ranhuras de conteúdo (*Slot APIs*) e contêineres de layout como o `Scaffold`.
 
@@ -35,14 +35,14 @@ Demonstração das seções de navegação, coleções e barras de busca estiliz
 
 | Modo Claro | Modo Escuro |
 | :---: | :---: |
-| <img src="screenshots/mysoothe_light.png" width="230" alt="MySoothe Light"> | <img src="screenshots/mysoothe_dark.png" width="230" alt="MySoothe Dark"> |
+| <img src="screenshots/mysoothe_light.png" width="50%" alt="MySoothe Light"> | <img src="screenshots/mysoothe_dark.png" width="50%" alt="MySoothe Dark"> |
 
 ### 2. Fluxo Interativo e Rolagem (GIF)
 Demonstração da rolagem horizontal das coleções, rolagem vertical da tela principal e navegação inferior.
 
 | Rolagem de Conteúdo e Interface |
 | :---: |
-| <img src="screenshots/layout_demo.gif" width="300" alt="GIF de Demonstração dos Layouts"> |
+| <img src="screenshots/layout_demo.gif" width="30%" alt="GIF de Demonstração dos Layouts"> |
 
 ## Como Executar o Projeto
 
