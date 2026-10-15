@@ -1,37 +1,54 @@
-# Basic Layouts in Compose Codelab
+# Layouts Básicos no Jetpack Compose (App MySoothe)
 
-This folder contains the source code for
-the [Basic Layouts in Compose Codelab](https://developer.android.com/codelabs/jetpack-compose-layouts)
+Este repositório contém a implementação prática desenvolvida durante o codelab **"Basic Layouts in Compose" (Layouts Básicos no Jetpack Compose)**, disponibilizado pelo Google.
 
-## License
+O objetivo deste projeto é explorar como estruturar layouts reais e complexos de interface do usuário para Android (aplicativo de bem-estar *MySoothe*), utilizando composables fundamentais, alinhamentos, modificadores, ranhuras de conteúdo (*Slot APIs*) e contêineres de layout como o `Scaffold`.
 
-```
-Copyright 2022 The Android Open Source Project
+## Tecnologias e Ferramentas Utilizadas
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+- **Linguagem:** Kotlin
+- **UI Framework:** Jetpack Compose (Material Design 3)
+- **Componentes Visuais:** `SearchBar`, `LazyRow`, `LazyColumn`, `Surface`, `Scaffold`, `NavigationBar`
+- **IDE:** Android Studio
+- **Mínimo SDK:** API level 24+
 
-    https://www.apache.org/licenses/LICENSE-2.0
+## Conceitos e Aprendizados Práticos
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-```
+Durante a realização deste codelab, os seguintes tópicos foram estudados e implementados:
 
-## Image asset attributions
+### 1. Elementos e Composables de Layout
+- **Barra de Pesquisa:** Implementação de campo de busca estilizado com ícones e dicas visuais.
+- **Grades e Listas Orientadas:** Construção de listas de rolagem horizontal (`LazyRow`) para coleções/categorias e itens circulares para coleções de alinhamento corporal.
+- **Seções de Conteúdo Reutilizáveis:** Uso de *Slot APIs* para criar títulos de seção padronizados com suporte a conteúdos dinâmicos.
 
-[fc1_short_mantras.jpg](https://www.pexels.com/photo/body-of-water-view-1825206/) - Elizaveta Kozorezova
-[fc2_nature_meditations.jpg](https://www.pexels.com/photo/photo-of-green-leaves-3571551/) - Nothing Ahead
-[fc3_stress_and_anxiety.jpg](https://www.pexels.com/photo/aerial-view-of-body-of-water-1557238/) - Jim
-[fc4_self_massage.jpg](https://www.pexels.com/photo/photography-of-stones-1029604/) - Scott Webb
-[fc5_overwhelmed.jpg](https://www.pexels.com/photo/white-clouds-3560044/) - Ruvim
-[fc6_nightly_wind_down.jpg](https://www.pexels.com/photo/time-lapse-photo-of-stars-on-night-924824/) - Jakub Novacek
-[ab1_inversions.jpg](https://www.pexels.com/photo/low-angle-view-of-woman-relaxing-on-beach-against-blue-sky-317157/) - Chevanon Photography
-[ab2_quick_yoga.jpg](https://www.pexels.com/photo/photo-of-woman-stretching-her-body-1812964/) - Agung Pandit Wiguna
-[ab3_stretching.jpg](https://www.pexels.com/photo/photo-of-women-stretching-together-4056723/) - Cliff Booth
-[ab4_tabata.jpg](https://www.pexels.com/photo/fashion-man-people-art-4662438/) - Elly Fairytale
-[ab5_hiit.jpg](https://www.pexels.com/photo/man-wearing-white-pants-under-blue-sky-999309/) - The Lazy Artist Gallery
-[ab6_pre_natal_yoga.jpg](https://www.pexels.com/photo/woman-doing-yoga-396133/) - freestocks.org
+### 2. Estrutura de Tela com Scaffold
+- Implementação do `Scaffold` para integrar a barra de navegação inferior (`NavigationBar` / `NavigationBarItem`) com o conteúdo principal da tela.
+
+### 3. Layouts Adaptáveis (Suporte a Telas / Orientação)
+- Organização modular da interface facilitando a adaptação para diferentes tamanhos de tela e orientação (retrato/paisagem).
+- Aplicação de temas e tipografias personalizadas no Material Design 3.
+
+## Evidências do Projeto (Demonstração Prática)
+
+### 1. Interface Principal da Aplicação
+Demonstração das seções de navegação, coleções e barras de busca estilizadas.
+
+| Modo Claro | Modo Escuro |
+| :---: | :---: |
+| <img src="screenshots/mysoothe_light.png" width="230" alt="MySoothe Light"> | <img src="screenshots/mysoothe_dark.png" width="230" alt="MySoothe Dark"> |
+
+### 2. Fluxo Interativo e Rolagem (GIF)
+Demonstração da rolagem horizontal das coleções, rolagem vertical da tela principal e navegação inferior.
+
+| Rolagem de Conteúdo e Interface |
+| :---: |
+| <img src="screenshots/layout_demo.gif" width="300" alt="GIF de Demonstração dos Layouts"> |
+
+## Como Executar o Projeto
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/leticia-farias/layouts-basicos-compose.git
+2. Abra o projeto no **Android Studio**.
+3. Aguarde o término da sincronização do **Gradle**.
+4. Execute o aplicativo em um emulador ou dispositivo físico (API 24+).
